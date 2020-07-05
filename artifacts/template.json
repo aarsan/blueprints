@@ -1,0 +1,33 @@
+{
+    "kind": "template",
+    "properties": {
+      "dependsOn": [],
+      "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "resourceName": {
+              "type": "string",
+              "metadata": "Ahmet's Managed Identity."
+            }
+          },
+          "resources": [
+            {
+              "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+              "name": "[parameters('resourceName')]",
+              "apiVersion": "2018-11-30",
+              "location": "centralus"
+            }
+          ]
+      },
+      "resourceGroup": "container-rg",
+      "parameters": {
+        "resourceName": {
+          "value": "[parameters('resourceName')]"
+        }
+      },
+      "displayName": "My ARM Template"
+    },
+    "type": "Microsoft.Blueprint/blueprints/artifacts",
+    "name": "myTemplate"
+}

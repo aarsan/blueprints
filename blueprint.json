@@ -1,0 +1,29 @@
+{
+    "properties": {
+        "description": "This BluePrint creates an AKS Managed Identity.",
+        "targetScope": "subscription",
+        "parameters": {
+            "rgname": {
+                "type": "string",
+                "metadata": {
+                    "description": "name of the resource"
+                },
+                "defaultValue": "ahmet-rg"
+            },
+            "resourceName": {
+                "type": "string",
+                "metadata": {
+                    "description":"name of the resource"
+                },
+                "defaultValue": "ahmet-id"
+            }
+        },
+        "resourceGroups": {
+            "container-rg": {
+                "location": "centralus",
+                "name": "[parameters('rgname')]"
+            }
+        }
+    },
+    "type": "Microsoft.Blueprint/blueprints" 
+}
