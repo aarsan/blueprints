@@ -1,0 +1,10 @@
+{
+    "kind": "roleAssignment",
+    "properties": {
+        "roleDefinitionId": "/providers/Microsoft.Authorization/roleDefinitions/2d5b52c1-113d-46b9-9a0a-38c6f542e305",
+        "principalIds": ["1588ea92-1c4b-4590-a525-5846e889ccc0"],
+        "displayName": "Ahmet's rbac"
+    },
+    "type": "Microsoft.Blueprint/blueprints/artifacts",
+    "name": "rbacAssignment"
+}
