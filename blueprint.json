@@ -1,6 +1,6 @@
 {
     "properties": {
-        "description": "This BluePrint creates an AKS Managed Identity.",
+        "description": "This BluePrint creates a storage account with private endpoint enabled in an existing VNET.",
         "targetScope": "subscription",
         "parameters": {
             "rgname": {
