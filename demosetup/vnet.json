@@ -52,7 +52,6 @@
         }
       }
     },
-    "variables": {},
     "resources": [
       {
         "type": "Microsoft.Network/virtualNetworks",
@@ -76,7 +75,9 @@
               "[parameters('vnetName')]"
             ],
             "properties": {
-              "addressPrefix": "[parameters('subnet1Prefix')]"
+              "addressPrefix": "[parameters('subnet1Prefix')]",
+              "privateEndpointNetworkPolicies": "Disabled",
+              "privateLinkServiceNetworkPolicies": "Enabled"
             }
           },
           {
